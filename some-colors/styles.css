@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+}
+
+.blue {
+    color: #007BA7;
+}
+
+.green {
+    color: #0BDA51;
+}
+
+.white {
+    color: #FAEBD7;
+}
+
+.purple {
+    color: #7f00ff;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.blue .box {
+    background-color: #007BA7;
+}
+
+.green .box {
+    background-color: #0BDA51;
+}
+
+.white .box {
+    background-color: #FAEBD7;
+}
+
+.purple .box {
+    background-color: #7f00ff;
+}
