@@ -1,0 +1,92 @@
+#uk-flag {
+    width: calc(13.9px + 37.7px + 4.1px + 12.4px + 4.1px + 37.7px + 4.8px + 9.3px);
+    height: calc(4.6px + 2.3px + 13.8px + 4.1px + 12.4px + 4.1px + 13.8px + 6.9px);
+    overflow: hidden;
+    background-color: #012169;
+    position: relative;
+}
+
+.slash {
+    width: calc(13.9px + 37.7px + 4.1px + 12.4px + 4.1px);
+    height: 2px;
+    transform-origin: 0 0;
+    transform: rotate(20deg);
+    background-color: #C8102E;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    
+}
+
+.outter-slash {
+    position: absolute;
+}
+
+.position-1 {
+    left: 0;
+    bottom: 0;
+}
+
+.position-2 {
+    right: 0;
+    top: 0;
+}
+
+.position-3 {
+    right: 0;
+    bottom: 0;
+}
+
+.rotate {
+    transform: rotate(-20deg);
+}
+
+.rotate-1 {
+    transform-origin: right top;
+    transform: scaleX(-1) rotate(210deg);
+}
+
+.rotate-2 {
+    transform-origin: right top;
+}
+
+.rotate-3 {
+    rotate: 90deg;
+}
+
+.white-line {
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    background-color: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.white-line-2 {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-color: #FFFFFF;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.red-line {
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: #C8102E;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.red-line-2 {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #C8102E;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
