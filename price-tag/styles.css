@@ -1,0 +1,149 @@
+* {
+    font-family: 'googlesans', 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 26px 34px;
+    background-color: #f0f0f0;
+}
+
+.hero {
+    background-color: #e0e0e0;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero video:nth-child(1) {
+    display: block;
+}
+
+.hero video:nth-child(2) {
+    display: none;
+}
+
+main {
+    margin: 30px 50px 0px 50px;
+}
+
+.price-option {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+}
+
+.tag {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tag h2 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.tag > p {
+    margin: 10px 0 15px 0;
+    font-size: small;
+}
+
+.tag .price {
+    text-align: center;
+}
+
+.price span:nth-child(1) {
+    vertical-align: top;
+}
+
+.price span:nth-child(2) {
+    font-weight: bold;
+}
+
+.tag ul {
+    list-style: none;
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tag button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tag button:hover {
+    background-color: #333;
+}
+
+/* need change from hover */
+.price span:nth-child(2) {
+    font-size: 6.4em;
+}
+/*  */
+
+.tag > hr, .tag > p, .tag ul, .tag > button {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s ease;
+    transform: translateY(10px);
+}
+
+.tag:hover > hr, .tag:hover > p, .tag:hover ul, .tag:hover > button {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+footer {
+    margin: 30px 0 0 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero video:nth-child(1) {
+        display: none;
+    }
+
+    .hero video:nth-child(2) {
+        display: block;
+    }
+
+    .price-option {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
