@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    visibility: hidden;
+    transform: translateX(400px);
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+header:has(.burger:focus) .title {
+    animation: fadeOutUp 1s ease forwards;
+}
+
+header:has(.burger:focus) .nav {
+    animation: fadeInUp 1s ease forwards;
+
+}
+
+@media (min-width: 768px) {
+    header:has(.burger:focus) .title {
+        animation: none;
+    }
+
+    header:has(.burger:focus) .nav {
+        animation: none;
+    }
+}
+/* 
+header:has(.burger:focus) .burger {
+    opacity: 0;
+}
+
+header:has(.burger:focus) .close {
+    opacity: 1;
+} */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelun Zhang - About Me</title>
+    <link href="./dist/styles.css" rel="stylesheet">
+</head>
+<body class="px-6 py-4 flex flex-col min-h-full md:px-12 md:py-8 md:grid md:grid-cols-1 md:grid-rows-4">
+    <header class="flex relative justify-center items-center h-40 overflow-hidden md:justify-between">
+        <button class="burger absolute right-0 block md:hidden">=</button>
+        <button class="close absolute right-0 hidden">x</button>
+        <div class="title text-3xl flex justify-center items-center font-extralight visible md:flex-1 md:justify-start">Zelun Zhang</div>
+        <div class="nav absolute flex gap-12 left-0 pl-6 invisible md:visible md:relative md:gap-20">
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    <main class="md:row-span-3 md:grid md:grid-cols-2 md:gap-12">
+        <div>
+            <div class="text-lg font-extralight mb-7">Contact Me</div>
+            <div class="text-sm font-light mb-2">Subject</div>
+            <input type="text" class="w-full bg-gray-100 mb-6 h-8">
+            <div class="text-sm font-light mb-2">Email</div>
+            <input type="email" class="w-full bg-gray-100 mb-6 h-8">
+            <div class="text-sm font-light mb-2">Message</div>
+            <textarea rows="5" class="w-full bg-gray-100 mb-6"></textarea>
+            <div class="flex justify-center items-center">
+                <button class="text-sm font-light bg-black text-white px-8 py-2 rounded-sm">Submit</button>
+            </div>
+        </div>
+        <div class="icon">
+            <video autoplay loop muted class="w-full h-auto object-scale-down">
+                <source src="./assets/images/cat.webm" type="video/webm">
+            </video>
+        </div>
+    </main>
+    <footer class="mt-auto text-center py-4">
+        <p class="">&copy; 2026 Zelun Zhang. All rights reserved.</p>
+    </footer>
+</body>
+</html>
